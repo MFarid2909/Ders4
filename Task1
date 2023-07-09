@@ -1,0 +1,36 @@
+//I could understand the logic but still problems with syntax. 
+
+
+using System;
+using System.ComponentModel.Design;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void main(string[] args)
+        {
+            int[] arr = { 8, 3, 4, 11 };
+            int num = Maxi(arr);
+            Console.WriteLine(num);
+        }
+        static int Maxi(int[] arr)
+        {
+            
+            {
+                int[] numbers = { 8, 3, 4, 11 };
+                int maxNumber = numbers[0];
+
+                for (int i = 0; i < numbers.Length; i++)
+                {
+                    if (numbers[i] > maxNumber)
+                    {
+                        maxNumber = numbers[i];
+                    }
+                }
+                
+            }
+            return Maxi(arr);
+        }
+    }
+}
