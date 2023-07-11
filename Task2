@@ -1,0 +1,25 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        Console.Write("Giriş verilənləri: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Çıxış verilənləri: " + CountDigits(number));
+    }
+
+    public static int CountDigits(int number)
+    {
+        int count = 0;
+        
+        while (number > 0)
+        {
+            number /= 10; // Ədədi 10-a bölməklə rəqəmi silirik
+            count++; // Rəqəmlərin sayını artırırıq
+        }
+        
+        return count;
+    }
+}
